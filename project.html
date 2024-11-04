@@ -14,12 +14,11 @@
         }
 
         header {
-            padding: 20px 0;
-            text-align: left;
-            padding-left: 20px;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         .header-container {
@@ -49,28 +48,16 @@
             font-weight: normal;
         }
 
-        .nav-container {
-            margin-top: 10px;
-        }
-
-        header nav ul {
+        .nav-container ul {
             list-style: none;
             padding: 0;
             margin: 0;
             display: flex;
-            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
-        header nav ul li {
-            margin: 0 15px;
-        }
-
-        header nav ul li:not(:last-child)::after {
-            content: "|";
-            margin-left: 15px;
-        }
-
-        header nav ul li a {
+        .nav-container ul li a {
             color: #4d4d4d;
             text-decoration: none;
         }
@@ -114,8 +101,8 @@
         footer {
             padding: 20px 0;
             font-size: 0.9em;
-            border-top: 1px solid #d3d3d3; /* Light grey separator line */
-            background-color: transparent; /* No background color */
+            border-top: 1px solid #d3d3d3;
+            background-color: transparent;
             text-align: center;
         }
 
@@ -123,14 +110,12 @@
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
-            justify-content: space-between; /* Space out sections evenly */
-            text-align: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
 
         .footer-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            margin: 10px;
         }
 
         .footer-section p {
@@ -142,12 +127,59 @@
         .footer-section a {
             color: #333;
             text-decoration: none;
-            margin-top: 5px;
             transition: color 0.3s;
         }
 
         .footer-section a:hover {
-            color: rgb(238, 163, 2); /* Yellow hover color */
+            color: rgb(238, 163, 2);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .projects-container {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            .projects-container h2 {
+                font-size: 1.5em;
+            }
+
+            .projects-container h3 {
+                font-size: 1.2em;
+            }
+
+            .projects-container p {
+                font-size: 0.9em;
+            }
+
+            .nav-container ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-container h1 {
+                font-size: 1.2em;
+            }
+
+            .projects-container h2 {
+                font-size: 1.3em;
+            }
+
+            .projects-container h3 {
+                font-size: 1em;
+            }
+
+            .projects-container p {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
@@ -177,7 +209,7 @@
     <p class="project-domain">Project Domain: <a href="http://www.trekmaharashtra.com" target="_blank">www.trekmaharashtra.com</a></p>
 
     <h3>GreenPath EMS</h3>
-    <p>Designed and developed an IoT-based system to address traffic signal issues faced by ambulances. Created 3 integrated websites: Hospital Control, Traffic Control, and Driver Control, enabling efficient communication and coordination to enhance emergency response times. Utilized ESP32 and ESP8266 for real-time data transmission and control.</p>
+    <p>Designed and developed an IoT-based system to address traffic signal issues faced by ambulances. Created 3 integrated websites: Hospital Control, Traffic Control, and Driver Control, enabling efficient communication and coordination to enhance emergency response times.</p>
     <p class="project-domain">Project Domain: <a href="http://www.greenpathems.com" target="_blank">www.greenpathems.com</a></p>
 
     <h3>Portfolio Website</h3>
@@ -208,12 +240,12 @@
 
         <div class="footer-section">
             <p>GitHub</p>
-            <a href="https://github.com/om937070" target="_blank">github.com/omkithani</a>
+            <a href="https://github.com/omkithani" target="_blank">github.com/omkithani</a>
         </div>
         
         <div class="footer-section">
             <p>LinkedIn</p>
-            <a href="https://www.linkedin.com/in/om-kithani-a90601270/" target="_blank">linkedin.com/in/omkithani</a>
+            <a href="https://linkedin.com/in/omkithani" target="_blank">linkedin.com/in/omkithani</a>
         </div>
     </div>
     <p>&copy; 2024 Om Kithani. All rights reserved.</p>

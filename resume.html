@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Om Kithani</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            padding: 20px 0;
+            text-align: left;
+            padding-left: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .yellow-circle {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(238, 163, 2);
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            color: black;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+
+        .student-label {
+            font-size: 0.8em;
+            color: #4d4d4d;
+            margin-left: 10px;
+            font-weight: normal;
+        }
+
+        .nav-container {
+            margin-top: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li:not(:last-child)::after {
+            content: "|";
+            margin-left: 15px;
+        }
+
+        header nav ul li a {
+            color: #4d4d4d;
+            text-decoration: none;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .resume-container h2 {
+            font-size: 2em;
+            color: black;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .resume-container h3 {
+            font-size: 1.5em;
+            color: black;
+            margin: 20px 0 10px;
+            font-weight: bold;
+        }
+
+        .resume-container p {
+            font-size: 1em;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .resume-container ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #555;
+        }
+
+        footer {
+            padding: 20px 0;
+            font-size: 0.9em;
+            border-top: 1px solid #d3d3d3; /* Light grey separator line */
+            background-color: transparent; /* No background color */
+            text-align: center;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between; /* Space out sections evenly */
+            text-align: center;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-section p {
+            margin: 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .footer-section a {
+            color: #333;
+            text-decoration: none;
+            margin-top: 5px;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: rgb(238, 163, 2); /* Yellow hover color */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="header-container">
+        <div class="yellow-circle"></div>
+        <h1>Om Kithani <span class="student-label">Student</span></h1> <!-- Added Student label -->
+    </div>
+    <nav class="nav-container">
+        <ul>
+            <li><a href=index.html>Back</a></li>
+            <li><a href=project.html>Projects</a></li>
+            <li><a href=contact.html>Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Resume Section -->
+<div class="resume-container">
+    <h2>Om Kiran Kithani</h2>
+    <p>Wagholi Pune India 412207 | 8010221750 | <a href="mailto:om937070@gmail.com">om937070@gmail.com</a> | <a href="https://www.linkedin.com/in/om-kithani-a90601270" target="_blank">LinkedIn Profile</a></p>
+
+    <h3>Profile</h3>
+    <p>Dedicated and analytical engineering student specializing in Artificial Intelligence and Data Science, with a strong foundation in web development and IoT technologies. Passionate about leveraging data-driven insights and machine learning techniques to solve complex problems. Seeking to apply technical skills and hands-on experience in developing innovative AI solutions and data-driven strategies that enhance operational efficiency and drive informed decision-making in a collaborative environment.</p>
+
+    <h3>Work History</h3>
+    <ul>
+        <li><strong>Trek Maharashtra:</strong> Developed a user-friendly website for a trekking project, focusing on login and authentication using XAMPP. Enhanced the project's reach by creating an engaging, functional web interface.</li>
+        <li><strong>GreenPath EMS:</strong> Designed and developed an IoT-based system to address traffic signal issues faced by ambulances. Created 3 integrated websites: Hospital Control, Traffic Control, and Driver Control, enabling efficient communication and coordination to enhance emergency response times. Utilized ESP32 and ESP8266 for real-time data transmission and control.</li>
+        <li><strong>Portfolio Website:</strong> Created a personal portfolio website using HTML, CSS, and JavaScript to showcase projects and skills. Implemented a responsive design to provide an optimal user experience across devices.</li>
+        <li><strong>KheloIndia:</strong> Assisted in developing an interactive platform for the KheloIndia initiative, focusing on user engagement and information dissemination about sports events. Improved the site's functionality by adding user profiles, event tracking, and database management.</li>
+        <li><strong>BookBuddy.org:</strong> Developed a platform for book lovers to connect, share, and discuss books. Integrated features like book recommendations, reviews, and a user forum, fostering a community-driven experience.</li>
+    </ul>
+
+    <h3>Education</h3>
+    <p>Bachelor of Engineering in Artificial Intelligence and Data Science<br>
+    Progressive Education Society, Modern College of Engineering<br>
+    Savitribai Phule Pune University<br>
+    Location: Pune<br>
+    Expected Graduation: 2026</p>
+
+    <h3>Skills & Abilities</h3>
+    <ul>
+        <li>Web Development: HTML, CSS, JavaScript, XAMPP with MySQL</li>
+        <li>Programming Languages: SQL, C++, Python</li>
+        <li>IoT Technologies: ESP32, ESP8266, Real-time Databases</li>
+        <li>API Integration: Experience in integrating APIs for data exchange</li>
+        <li>Project Management: Task Scheduling, Deadline Management, Team Collaboration, Project Documentation</li>
+        <li>Software Proficiency: MS Word, PowerPoint, Excel</li>
+        <li>Soft Skills: Teamwork, Collaboration, Friendly and Positive Approach, Problem-Solving</li>
+    </ul>
+
+    <h3>Languages</h3>
+    <ul>
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Marathi</li>
+    </ul>
+
+    <h3>Activities and Interests</h3>
+    <ul>
+        <li>Swimming</li>
+        <li>Biking</li>
+        <li>Dancing</li>
+    </ul>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <p>Phone</p>
+            <a href="tel:+918010221750">8010221750</a>
+        </div>
+        
+        <div class="footer-section">
+            <p>Email</p>
+            <a href="mailto:Om937070@gmail.com">Om937070@gmail.com</a>
+        </div>
+
+        <div class="footer-section">
+            <p>GitHub</p>
+            <a href="https://github.com/omkithani" target="_blank">github.com/omkithani</a>
+        </div>
+        
+        <div class="footer-section">
+            <p>LinkedIn</p>
+            <a href="https://linkedin.com/in/omkithani" target="_blank">linkedin.com/in/omkithani</a>
+        </div>
+    </div>
+    <p>&copy; 2024 Om Kithani. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

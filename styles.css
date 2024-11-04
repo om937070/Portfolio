@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    padding: 20px 0;
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.yellow-circle {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(238, 163, 2);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header h1 {
+    color: black;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.student-label {
+    font-size: 0.8em;
+    color: #4d4d4d;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.nav-container {
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li:not(:last-child)::after {
+    content: "|";
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 40px; /* Increased space below the profile section */
+}
+
+.profile-image {
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin-right: 20px;
+}
+
+.profile-container h2 {
+    font-size: 4em;
+    color: black;
+    margin: 0;
+    font-weight: bold;
+}
+
+.profile-container h3 {
+    font-size: 2em;
+    color: black;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.about-me {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+    max-width: 600px;
+    font-weight: normal;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: transform 0.3s;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+}
+
+.button.resume {
+    background-color: rgb(238, 163, 2);
+}
+
+.button.projects {
+    background-color: rgb(2, 163, 238);
+}
+
+.button.contact {
+    background-color: rgb(163, 2, 238);
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px 0;
+    font-size: 0.9em;
+    border-top: 1px solid #d3d3d3; /* Light grey separator line */
+    background-color: transparent; /* No background color */
+    margin-top: 40px; /* Space above the footer */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Space out sections evenly */
+    text-align: center;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.footer-section a {
+    color: #333;
+    text-decoration: none;
+    margin-top: 5px;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: rgb(238, 163, 2); /* Yellow hover color */
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #555;
+}

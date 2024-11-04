@@ -15,12 +15,12 @@
         }
 
         header {
-            padding: 20px 0;
-            text-align: left;
-            padding-left: 20px;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            background-color: #fff;
         }
 
         .header-container {
@@ -50,28 +50,19 @@
             font-weight: normal;
         }
 
-        .nav-container {
-            margin-top: 10px;
-        }
-
-        header nav ul {
+        .nav-container ul {
             list-style: none;
             padding: 0;
             margin: 0;
             display: flex;
-            justify-content: flex-end;
+            flex-wrap: wrap;
         }
 
-        header nav ul li {
+        .nav-container ul li {
             margin: 0 15px;
         }
 
-        header nav ul li:not(:last-child)::after {
-            content: "|";
-            margin-left: 15px;
-        }
-
-        header nav ul li a {
+        .nav-container ul li a {
             color: #4d4d4d;
             text-decoration: none;
         }
@@ -90,6 +81,7 @@
             color: black;
             margin: 0;
             font-weight: bold;
+            text-align: center;
         }
 
         .contact-info {
@@ -109,18 +101,18 @@
 
         .contact-info a i {
             margin-right: 10px;
-            font-size: 1.5em; /* Adjust icon size */
+            font-size: 1.5em;
         }
 
         .contact-info a:hover {
-            color: black; /* Change color on hover */
+            color: black;
         }
 
         footer {
             padding: 20px 0;
             font-size: 0.9em;
-            border-top: 1px solid #d3d3d3; /* Light grey separator line */
-            background-color: transparent; /* No background color */
+            border-top: 1px solid #d3d3d3;
+            background-color: transparent;
             text-align: center;
         }
 
@@ -128,7 +120,8 @@
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
-            justify-content: space-between; /* Space out sections evenly */
+            justify-content: space-between;
+            flex-wrap: wrap;
             text-align: center;
         }
 
@@ -136,12 +129,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-
-        .footer-section p {
-            margin: 0;
-            font-weight: bold;
-            color: #333;
+            margin: 10px;
         }
 
         .footer-section a {
@@ -152,7 +140,54 @@
         }
 
         .footer-section a:hover {
-            color: rgb(238, 163, 2); /* Yellow hover color */
+            color: rgb(238, 163, 2);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .contact-container {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            .contact-container h2 {
+                font-size: 1.5em;
+            }
+
+            .contact-info {
+                font-size: 1em;
+            }
+
+            .nav-container ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-container ul li {
+                margin: 5px 0;
+            }
+
+            .footer-container {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-container h1 {
+                font-size: 1.2em;
+            }
+
+            .contact-container h2 {
+                font-size: 1.2em;
+            }
+
+            .contact-info a i {
+                font-size: 1.2em;
+            }
+
+            .contact-info {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -180,11 +215,11 @@
         <p><strong>Address:</strong> Wagholi, Pune, India 412207</p>
         <p><strong>Phone:</strong> <a href="tel:+918010221750"><i class="fas fa-phone-alt"></i> 8010221750</a></p>
         <p><strong>Email:</strong> <a href="mailto:om937070@gmail.com"><i class="fas fa-envelope"></i> om937070@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/om-kithani-a90601270/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/omkithani</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/om937070" target="_blank"><i class="fab fa-github"></i> github.com/omkithani</a></p>
-        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/omkithani_official/" target="_blank"><i class="fab fa-instagram"></i> instagram.com/omkithani</a></p>
-        <p><strong>Facebook:</strong> <a href="https://facebook.com/omkithani_official/" target="_blank"><i class="fab fa-facebook"></i> facebook.com/omkithani</a></p>
-        <p><strong>Twitter:</strong> <a href="https://twitter.com/Om937070" target="_blank"><i class="fab fa-twitter"></i> twitter.com/omkithani</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/omkithani" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/omkithani</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/omkithani" target="_blank"><i class="fab fa-github"></i> github.com/omkithani</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i> instagram.com/yourusername</a></p>
+        <p><strong>Facebook:</strong> <a href="https://facebook.com/yourusername" target="_blank"><i class="fab fa-facebook"></i> facebook.com/yourusername</a></p>
+        <p><strong>Twitter:</strong> <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i> twitter.com/yourusername</a></p>
     </div>
 </div>
 
@@ -195,20 +230,17 @@
             <p>Phone</p>
             <a href="tel:+918010221750">8010221750</a>
         </div>
-        
         <div class="footer-section">
             <p>Email</p>
             <a href="mailto:Om937070@gmail.com">Om937070@gmail.com</a>
         </div>
-
         <div class="footer-section">
             <p>GitHub</p>
-            <a href="https://github.com/om937070" target="_blank">github.com/omkithani</a>
+            <a href="https://github.com/omkithani" target="_blank">github.com/omkithani</a>
         </div>
-        
         <div class="footer-section">
             <p>LinkedIn</p>
-            <a href="https://www.linkedin.com/in/om-kithani-a90601270/" target="_blank">linkedin.com/in/omkithani</a>
+            <a href="https://linkedin.com/in/omkithani" target="_blank">linkedin.com/in/omkithani</a>
         </div>
     </div>
     <p>&copy; 2024 Om Kithani. All rights reserved.</p>

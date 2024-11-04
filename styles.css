@@ -73,7 +73,7 @@ header nav ul li a {
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-    margin-bottom: 40px; /* Increased space below the profile section */
+    margin-bottom: 40px;
 }
 
 .profile-image {
@@ -149,16 +149,16 @@ header nav ul li a {
 footer {
     padding: 20px 0;
     font-size: 0.9em;
-    border-top: 1px solid #d3d3d3; /* Light grey separator line */
-    background-color: transparent; /* No background color */
-    margin-top: 40px; /* Space above the footer */
+    border-top: 1px solid #d3d3d3;
+    background-color: transparent;
+    margin-top: 40px;
 }
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* Space out sections evenly */
+    justify-content: space-between;
     text-align: center;
 }
 
@@ -182,7 +182,7 @@ footer {
 }
 
 .footer-section a:hover {
-    color: rgb(238, 163, 2); /* Yellow hover color */
+    color: rgb(238, 163, 2);
 }
 
 .copyright {
@@ -190,4 +190,99 @@ footer {
     margin-top: 10px;
     font-size: 0.8em;
     color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .profile-image {
+        width: 400px;
+        height: 400px;
+    }
+
+    .profile-container h2 {
+        font-size: 3em;
+    }
+
+    .profile-container h3 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 300px;
+        height: 300px;
+        margin: 0;
+    }
+
+    .profile-container h2 {
+        font-size: 2.5em;
+    }
+
+    .profile-container h3 {
+        font-size: 1.5em;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 80px;
+        height: 80px;
+        margin: 10px 0;
+        font-size: 0.9em;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-container h2 {
+        font-size: 2em;
+    }
+
+    .profile-container h3 {
+        font-size: 1.2em;
+    }
+
+    .button {
+        width: 70px;
+        height: 70px;
+        font-size: 0.8em;
+    }
+
+    .about-me {
+        font-size: 0.9em;
+        max-width: 90%;
+    }
+
+    .footer-section p {
+        font-size: 0.8em;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
